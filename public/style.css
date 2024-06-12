@@ -1,0 +1,206 @@
+* {
+    font-family: Inter;
+}
+
+.header {
+    margin-bottom: 1rem;
+}
+
+.header .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero.jpg');
+    background-size: cover;
+    -webkit-transform: skewY(-12deg);
+    transform: skewY(-7deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    z-index: -10; 
+}
+
+.header .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    color: #fff;
+}
+
+.header .contents {
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.parallax-container {
+    padding-top: 80px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem !important;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.parallax-text {
+    font-size: 2rem;
+    transition: transform 0.01s ease;
+}
+
+.navbar {
+    background-color: rgba(255, 102, 0);
+    transition: all 0.3s;
+}
+
+.navbar-hidden {
+    opacity: 0 !important;
+    transition: all 0.3s;
+}
+
+.navbar-transparent {
+    background-color: rgba(255, 102, 0, 0.7);
+    transition: all 0.3s;
+}
+
+.menu-bg .navbar-nav .nav-link {
+    color: #FFFFFF !important; }
+  
+  .menu-bg .navbar-nav .nav-link:hover {
+    color: #FFFFFF !important; }
+  
+  .menu-bg .navbar-nav .active {
+    color: #FFFFFF !important; }
+  
+  .navbar-expand-md .navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 15px 20px;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    font-weight: 500; }
+  
+  .navbar-expand-md .navbar-nav .nav-link:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s; }
+  
+  .navbar-expand-md .navbar-nav .active::before,
+  .navbar-expand-md .navbar-nav .nav-link:hover::before {
+    width: 100%;
+ }
+  
+  .navbar-brand {
+    color: #FFFFFF; }
+  
+  .navbar-expand-md .navbar-nav .nav-link:focus,
+  .navbar-expand-md .navbar-nav .nav-link:hover,
+  .navbar-expand-md .navbar-nav .nav-link:hover:before {
+    color: #FFFFFF; }
+  
+  .navbar-expand-md .navbar-nav .active > .nav-link,
+  .navbar-expand-md .navbar-nav .nav-link.active,
+  .navbar-expand-md .navbar-nav .nav-link.active:before,
+  .navbar-expand-md .navbar-nav .nav-link.open,
+  .navbar-expand-md .navbar-nav .open > .nav-link {
+    color: #FFFFFF; }
+  
+.navbar-expand-md .navbar-toggler {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: pointer;
+    float: right; 
+}
+  
+.navbar-expand-md .navbar-toggler i {
+    color: #FFFFFF !important; 
+}
+  
+.navbar-expand-md .navbar-toggler:focus {
+    outline: none; 
+}
+
+#ideas {
+    z-index: 100;
+}
+
+.logo-img {
+    width: 84px;
+    filter: brightness(0) invert(1);
+}
+
+select {
+    border-radius: 20px;
+    border: 2px solid #f1f1f1;
+    padding: 5px 5px;
+}
+
+.card {
+    width: 16rem;
+    height: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: 'PT Sans Narrow'!important;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.009);
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card .card-title {
+    font-family: 'Roboto'!important;
+    font-weight: bold;
+    color: #b9b9b9;
+    text-transform: uppercase;
+
+}
+
+.card-body .title {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: 'Roboto'!important;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 1320px){
+    .header .overlay {
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .header .overlay {
+        height: 70%;
+    }
+}
